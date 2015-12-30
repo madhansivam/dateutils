@@ -1,0 +1,19 @@
+{
+  "name": "dateutils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madhansivam/dateutils.git"
+  },
+  "author": "Madhan Sadasivam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhansivam/dateutils/issues"
+  },
+  "homepage": "https://github.com/madhansivam/dateutils"
+}
