@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/madhansivam/dateutils/issues"
   },
-  "homepage": "https://github.com/madhansivam/dateutils"
+  "homepage": "https://github.com/madhansivam/dateutils",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
