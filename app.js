@@ -10,6 +10,10 @@ app.get('/v1/now', function (req, res) {
     res.send(new Date());
 });
 
+app.get('/v1/neverreturn', function (req, res) {
+    // nothing to send
+});
+
 var server = app.listen(app.get('port'), function () {
   var host = server.address().address;
   var port = server.address().port;
