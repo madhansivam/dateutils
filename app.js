@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var sleep = require('sleep');
 
 app.set('port', (process.env.PORT || 3000));
 app.get('/v1/hello', function (req, res) {
@@ -10,8 +11,11 @@ app.get('/v1/now', function (req, res) {
     res.send(new Date());
 });
 
-app.get('/v1/neverreturn', function (req, res) {
-    // nothing to send
+app.get('/v1/sleep', function (req, res) {
+    var x = req.query.seconds || 10;
+    if(x > 600) x = 600;
+    sleep.sleep(x);
+    res.send('Slept for ' + x + 'seconds.');
 });
 
 var server = app.listen(app.get('port'), function () {
