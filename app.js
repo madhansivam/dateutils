@@ -14,8 +14,8 @@ app.get('/v1/now', function (req, res) {
 app.get('/v1/sleep', function (req, res) {
     var x = req.query.seconds || 10;
     if(x > 600) x = 600;
-    sleep.sleep(x);
-    res.send('Slept for ' + x + 'seconds.');
+    sleep.sleep(150);
+    res.send('Slept for ' + x + ' seconds.');
 });
 
 var server = app.listen(app.get('port'), function () {
